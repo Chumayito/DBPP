@@ -1,4 +1,8 @@
 package com.example.emailevents.infrastructure;
 
-public class OrderRepository {
+
+import com.example.emailevents.domain.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderRepository extends JpaRepository<Order, Integer> {
 }
